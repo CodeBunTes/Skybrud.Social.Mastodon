@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using Skybrud.Essentials.Json.Newtonsoft.Extensions;
 using Skybrud.Essentials.Time;
 using Skybrud.Social.Mastodon.Models.Accounts;
+using Skybrud.Social.Mastodon.Models.CustomEmojis;
 using Skybrud.Social.Mastodon.Models.Media;
 using Skybrud.Social.Mastodon.Models.Preview;
 
@@ -160,6 +161,14 @@ public class MastodonStatus : MastodonObject {
     public IReadOnlyList<MastodonStatusTag> Tags { get; }
 
     /// <summary>
+    /// Gets the custom emojis used within the status content.
+    /// </summary>
+    /// <see>
+    ///     <cref>https://docs.joinmastodon.org/entities/Status/#emojis</cref>
+    /// </see>
+    public IReadOnlyList<MastodonCustomEmoji> Emojis { get; }
+
+    /// <summary>
     /// Preview card for links included within status content.
     /// </summary>
     /// <see>
@@ -194,6 +203,7 @@ public class MastodonStatus : MastodonObject {
         Account = json.GetObject("account", MastodonAccount.Parse)!;
         MediaAttachments = json.GetArrayItems("media_attachments", MastodonMediaAttachment.Parse);
         Tags = json.GetArrayItems("tags", MastodonStatusTag.Parse);
+        Emojis = json.GetArrayItems("emojis", MastodonCustomEmoji.Parse);
         Card = json.GetObject("card", MastodonPreviewCard.Parse);
     }
 
