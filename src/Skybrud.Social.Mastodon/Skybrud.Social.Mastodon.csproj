@@ -22,7 +22,7 @@
   <PropertyGroup>
     <PackageId>Skybrud.Social.Mastodon</PackageId>
     <PackageTags>Mastodon, Skybrud, Social, OAuth, JSON, Limbo, API</PackageTags>
-    <PackageProjectUrl>https://skybrud.social/mastodon/</PackageProjectUrl>
+    <PackageProjectUrl>https://packages.limbo.works/skybrud.social.mastodon/</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
