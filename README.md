@@ -3,6 +3,10 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/abjerner/Skybrud.Social.Mastodon/blob/v1/main/LICENSE.md)
 [![NuGet](https://img.shields.io/nuget/vpre/Skybrud.Social.Mastodon.svg)](https://www.nuget.org/packages/Skybrud.Social.Mastodon)
 [![NuGet](https://img.shields.io/nuget/dt/Skybrud.Social.Mastodon.svg)](https://www.nuget.org/packages/Skybrud.Social.Mastodon)
+[![Skybrud.Social.Mastodon at packages.limbo.works](https://img.shields.io/badge/limbo-packages-blue)](https://packages.limbo.works/skybrud.social.mastodon/)
+
+
+
 
 
 .NET API wrapper and implementation of the [**Mastodon API**](https://docs.joinmastodon.org/client/intro/).
@@ -31,13 +35,13 @@
 The package is only available via [**NuGet**](https://www.nuget.org/packages/Skybrud.Social.Mastodon/1.0.0-alpha003). To install the package, you can either use the .NET CLI:
 
 ```
-dotnet add package Skybrud.Social.Mastodon --version 1.0.0-alpha003
+dotnet add package Skybrud.Social.Mastodon --version 1.0.0-alpha004
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Skybrud.Social.Mastodon -Version 1.0.0-alpha003
+Install-Package Skybrud.Social.Mastodon -Version 1.0.0-alpha004
 ```
 
 
